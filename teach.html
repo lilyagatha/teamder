@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teamder - Home Page</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+<link rel="stylesheet" href="./css/navbar.css">
+<link rel="stylesheet" href="./css/index.css" />
+</head>
+
+
+<body>
+  <header>
+    <nav class="main-nav">
+      <input type="checkbox" id="check" />
+      <label for="check" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="index.html" class="logo">Teamder</a>
+      <ul class="navlinks">
+        <li><a href="./index.html">搵嘢學</a></li>
+        <li><a href="./teach.html">搵人嚟教</a></li>
+        <div id="login-btn" class="d-none">
+          <li><a href="./signup.html" class="contact">註冊</a></li>
+          <li><a href="./login.html" id="nav-login" class="contact">登入</a></li>
+        </div>
+        <div id="logout-btn" class="d-none">
+          <li><a href="./match.html">配對(Beta)</a></li>
+          <li><a href="./postskill.html"><i class="fas fa-pen"></i>登記技能</a></li>
+          <li><a href="#" id="logout-form" class="contact">登出</a></li>
+          <div id="profile-pic-container">
+            <a href="./profile.html"><img id="profile-pic-nav" alt="user submitted image"
+                src="../asset/default-icon.jpeg" loading="lazy" /> </a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <img class="top-banner" src="#" alt="placeholder" />
+
+  <div class="center-position">
+    <div>
+      <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_z01bika0.json" background="transparent"
+        speed="1" style="width: 500px; height: 350px;" loop autoplay></lottie-player>
+    </div>
+    <div>
+      <h1>想教人？</h1>
+      <form class="example" action="/teach/search" onsubmit="searchTitle(event)">
+        <input type="text" placeholder="Search.." name="title" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="bigger-font">
+    <div class="categories-list">
+      <div class="category-inner">
+        <div class="category-item">
+          <a class="category-link" onclick="searchCat(event)" href="/teach/search/0">
+            <img class="category-image" src="cat01all.jpg"><br>
+            <span class="category-name">所有分類</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-search-list"></div>
+  <div class="post-search-name"></div>
+  <p class="no-result">Nothing could be found from this category</p>
+
+  <div class="post-list">
+    <div class="post-inner">
+      <a href="#" class="card-link">
+        <div class="card">
+          <div class="skill-card-header">
+            <img class="card-upload" src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg"
+              alt="rover" />
+          </div>
+          <div class="skill-card-body">
+            <div class="skill-tag row w-100 m-0">
+              <div class="col">
+                <div class="tag card-category" id="color">Category</div>
+              </div>
+              <div class="type-relative col">
+                <div class="type-container">
+                  <div class="card-type ms-auto" id="card-type">Type</div>
+                </div>
+              </div>
+            </div>
+            <div class="px-3">
+              <h2 class="card-title">Title</h2>
+              <p>張貼自 <span class="card-createdate">Date</span></p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="./js/navbar.js"></script>"
+  <script src="./js/teach.js"></script>
+</body>
+
+</html>

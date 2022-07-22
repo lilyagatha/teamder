@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+}
+#chatRoom {
+  padding: 20px;
+  height: 70px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #55b3b2;
+  color: #fff;
+}
+.messageContent {
+  margin: 10px;
+  height: 70vh;
+  background-color: #fff;
+  display: flex;
+  overflow: scroll;
+}
+
+.messageBox {
+  width: fit-content;
+  max-width: 70%;
+  height: auto;
+  padding: 15px;
+  background-color: #cad8d8;
+  box-shadow: 10px 10px lightblue;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.receiverContent,
+.senderContent {
+  padding: 10px;
+}
+.receiverName {
+  color: #c62b3c;
+}
+.senderName {
+  color: #002966;
+}
+.messageList {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.senderBoxList {
+  display: flex;
+  justify-content: flex-end;
+}
+.sendBox .messageBox {
+  float: right;
+}
+
+.senderBar {
+  height: 30px;
+  border-top: solid #ff7161;
+  border-bottom: solid #ff7161;
+  width: 100vw;
+}
+
+.inputBar {
+  display: flex;
+}
+#submitBtn {
+  width: 100px;
+  height: 36px;
+}
+#inputField {
+  resize: none;
+  overflow: hidden;
+  min-height: 20px;
+  max-height: 100px;
+  width: 100%;
+  font-size: 16px;
+}

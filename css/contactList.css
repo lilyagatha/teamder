@@ -1,0 +1,241 @@
+.contactHeader {
+  font-size: 50px;
+  background: linear-gradient(45deg, #47b9a6, #9198e5);
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  margin: 0;
+}
+.contactBoxCss {
+  width: 450px;
+  height: 150px;
+  background-color: #e8eff0;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  /* justify-content: space-between;
+  align-items: center; */
+  position: relative;
+  box-shadow: 5px 10px #888888;
+  color: rgb(10, 3, 24);
+}
+.chatroom-link > i {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+.username {
+  font-size: 20px;
+  text-align: center;
+}
+
+.contactList {
+  margin: 20px 10px 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.icon > .sample-pic {
+  width: 100px;
+  height: 100px;
+  background-color: #dbfffd;
+  border-radius: 100%;
+}
+.counter {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 60px;
+}
+.boxHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.messageBox {
+  height: 100px;
+  width: 200px;
+  padding: 20px;
+  overflow: hidden;
+}
+.contactList a {
+  text-decoration: none;
+}
+.latestMessageHeader {
+  font-size: 20px;
+}
+.latestMessage {
+  color: #888888;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.delete-button {
+  width: 10%;
+  /* padding: 0.75rem; */
+  background: #fa6c6c;
+  color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  height: 36px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.contactBox {
+  position: relative;
+}
+.blocklistContent,
+.followlistContent,
+.fanslistContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 10px;
+  padding: 10px;
+}
+.block-button {
+  width: 10%;
+  /* padding: 0.75rem; */
+  background: #878080;
+  color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  height: 36px;
+  position: absolute;
+  right: 80px;
+  bottom: 20px;
+}
+.unblock-button {
+  width: 20%;
+  /* padding: 0.75rem; */
+  background: #878080;
+  color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  height: 36px;
+  position: absolute;
+  right: 80px;
+  margin-right: 25px;
+  margin-left: 25px;
+
+  bottom: 20px;
+}
+.unfollow-button {
+  /* padding: 0.75rem; */
+  background: #c2dc73;
+  position: static;
+  width: 80px;
+  color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.8rem;
+  height: 24px;
+  right: 80px;
+  bottom: 20px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.unblock-button.unblock-button-in-list {
+  position: static;
+  width: 80px;
+  background: #878080;
+  color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.8rem;
+  height: 24px;
+  right: 80px;
+  bottom: 20px;
+}
+.display-none {
+  display: none;
+}
+.allLists {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.allLists > ul {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+.lists {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .usernames {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+.followListHeader,
+.fansListHeader,
+.blockListHeader {
+  text-align: center;
+}
+.blockList,
+.followList,
+.fansList {
+  width: 300px;
+}
+
+@media only screen and (max-width: 720px) {
+  .lists {
+    flex-direction: column;
+    height: fit-content;
+    padding: 10px;
+  }
+  .followListHeader,
+  .fansListHeader,
+  .blockListHeader {
+    text-align: center;
+  }
+  .allLists {
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+  .blockList,
+  .followList,
+  .fansList {
+    width: 300px;
+  }
+  .followlistContent,
+  .fanslistContent,
+  .blocklistContent {
+    justify-content: center;
+  }
+}
+
+.link-css {
+  text-decoration: none;
+  color: #000c73;
+  background-color: #c86153;
+  padding: 5px;
+  border-radius: 5px;
+}
+.link-css.fan-link {
+  text-decoration: none;
+  color: #ca9f52;
+  background-color: #5c53cb;
+  padding: 5px;
+  border-radius: 5px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="./css/chatRoom.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css">
+    <link rel="stylesheet" href="./chatRoom.css">
+</head>
+
+<body>
+    <div id="chatRoom">聊天室</div>
+    <div class="messageContent">
+        <div class="messageList">
+            <div class="receiveBox">
+                <div class="messageBox">
+                    <div class="receiverName">receiverName</div>
+                    <div class="receiverContent">hi i am receiver</div>
+                </div>
+            </div>
+            <div class="sendBox">
+                <div class="messageBox">
+                    <div class="senderName">senderName</div>
+                    <div class="senderContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia molestias
+                        ex
+                        quam aliquam ut est reiciendis at tempore possimus commodi. Voluptates distinctio ab, cupiditate
+                        dolor consectetur natus optio quo eos.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <form id="sendingForm">
+        <div class="senderInput">
+            <div class="inputBar">
+                <textarea name="inputField" oninput="auto_grow(this)" placeholder="輸入..." id="inputField"></textarea>
+                <input type="submit" value="傳送" id="submitBtn">
+            </div>
+
+        </div>
+    </form>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/chatRoom.js"></script>
+
+</body>
+
+</html>

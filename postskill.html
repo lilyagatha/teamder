@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teamder - Publish skill</title>
+    <link rel="stylesheet" href="./css/postskill.css" />
+  </head>
+
+  <body>
+    <div class="close">X</div>
+
+
+    
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Publish Your Skill Now!!</h1>
+      </header>
+      <form
+        id="post-skill"
+        method="POST"
+        action="/postskill"
+        enctype="multipart/form-data"
+      >
+
+      溫馨提示：揀<span class="font-style">我想學嘅技能</span>再出POST就可以玩到我地配對功能～
+      <div class="switch-field">
+      <input type="radio" id="switch_left" name="skill-radio" value="teach" checked>
+      <label for="switch_left">我想教嘅技能 </label>
+      <input type="radio" id="switch_right" name="skill-radio" value="learn">
+      <label for="switch_right">我想學嘅技能</label>
+	</div>
+
+
+    
+        <div class="form-group">
+          <label>技能名稱：</label>
+          <input type="text" name="title" class="form-control form-title" required />
+        </div>
+
+        <div class="form-group">
+          <p>選擇分類：</p>
+          <select id="dropdown" name="category" class="form-control" required>
+            <option disabled selected value>選擇分類...</option>
+            <option value="2">電腦/資訊科技</option>
+            <option value="3">烹飪</option>
+            <option value="4">運動</option>
+            <option value="5">語言</option>
+            <option value="6">藝術/創意</option>
+            <option value="7">音樂</option>
+            <option value="8">其他</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>技術描述：</p>
+          <textarea class="input-textarea" name="content" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <p>上載圖片：</p>
+          <input name="upload" type="file" accept="image/*" />
+        </div>
+
+        <div class="button-group">
+          <input class="submit-button" type="submit" value="提交" />
+          <input class="delete-button" type="button" value="刪除" />
+        </div>
+        <p class="errorMessage"></p>
+      </form>
+    </div>
+
+    <!-- <div class="error-message" hidden></div> -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/postskill.js"></script>
+  </body>
+</html>

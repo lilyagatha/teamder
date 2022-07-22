@@ -1,0 +1,328 @@
+/* @media only screen and (max-width: 390px) {
+  .category-image{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  color: #10182f;
+}
+
+/* .top-banner {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  width: 90%;
+  height: 80px;
+  object-fit: cover;
+} */
+
+.categories-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category-inner {
+  display: inline-block;
+}
+
+.category-name{
+  color: #444444;
+}
+
+.category-image {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.category-item {
+  text-align: center;
+  padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.post-list,
+.post-search-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 380px;
+}
+
+.card:hover {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  color: #444444;
+}
+
+.skill-card-header img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.skill-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 150px;
+}
+
+.tag {
+  background: #676767;
+  border-radius: 50px;
+  font-size: 15px;
+  margin-top: 15px;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.tag-blue {
+  background-color: #47bcd4;
+}
+.tag-purple {
+  background-color: #5e76bf;
+}
+.tag-pink {
+  background-color: #d05985;
+}
+
+.tag-green {
+  background-color: #74a23f;
+}
+
+.tag-orange {
+  background-color: #f19a61;
+}
+
+.tag-red {
+  background-color: #993434;
+}
+
+.tag-yellow {
+  background-color: #dbb51f;
+}
+
+
+.type-tag-learn {
+  /* background: #cccccc; */
+  /* border-radius: 50px; */
+  font-size: 15px;
+  /* margin-top: 15px; */
+  color: #fff;
+  /* padding: 2px 10px; */
+  text-transform: uppercase;
+  /* width: fit-content; */
+
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  margin: 0 16px 0 0;
+  padding: 0 10px 0 12px;
+  background: #0a8153;    
+  -webkit-border-bottom-right-radius: 3px;    
+  border-bottom-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;    
+  border-top-right-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+
+.type-tag-learn:before {
+  content: "";
+  position: absolute;
+  top:0;
+  right: 100%;
+  width: 0;
+  height: 0;
+  border-color: transparent #0a8153 transparent transparent;
+  border-style: solid;
+  border-width: 12px 12px 12px 0;        
+  }
+
+.type-tag-learn:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  float: right;
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
+  box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
+  }
+
+  .type-tag-teach {
+    /* background: #cccccc; */
+    /* border-radius: 50px; */
+    font-size: 15px;
+    /* margin-top: 15px; */
+    color: #fff;
+    /* padding: 2px 10px; */
+    text-transform: uppercase;
+    /* width: fit-content; */
+  
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    margin: 0 16px 0 0;
+    padding: 0 10px 0 12px;
+    background: #6262f9;    
+    -webkit-border-bottom-right-radius: 3px;    
+    border-bottom-right-radius: 3px;
+    -webkit-border-top-right-radius: 3px;    
+    border-top-right-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    font-weight: bold;
+  }
+  
+  .type-tag-teach:before {
+    content: "";
+    position: absolute;
+    top:0;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-color: transparent #6262f9 transparent transparent;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;        
+    }
+  
+  .type-tag-teach:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    float: right;
+    width: 5px;
+    height: 5px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
+    box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
+    }
+
+
+.type-relative {
+  position: relative;
+}
+.type-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #444444;
+}
+
+.bigger-font {
+  font-size: 18px;
+}
+
+.no-result {
+  display: none;
+  font-size: 2rem;
+  text-align: center;
+  padding: 6rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 25px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  margin-bottom: 2rem;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 25px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+/* form.example button:hover {
+  background: #0b7dda;
+} */
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1{
+  font-size: 4rem;
+  margin-bottom: 0.5rem !important;
+}
+
+h2{
+  font-size: 1.8rem;
+  margin: 0.8rem  0 !important;
+}
+
+
